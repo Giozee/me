@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   ChakraProvider,
   Stack,
@@ -22,49 +22,78 @@ import {
   Heading,
   Tag,
   Text
-} from '@chakra-ui/react'
-import { EmailIcon } from '@chakra-ui/icons'
+} from "@chakra-ui/react";
+import { EmailIcon } from "@chakra-ui/icons";
 
 const App = () => (
   <ChakraProvider resetCSS>
     <Flex
       display="flex"
       flexDirection="column"
-      alignItems="center"
+      alignItems="stretch"
       justifyContent="center"
       textAlign="center"
       mt={3}
-      color="#000000"
+      color="whiteAlpha.500"
       mb={3}
-      pt={10}
-      pb={10}
+      borderRadius="lg"
+      border="1px"
+      ml={6}
+      mr={6}
+      p={0}
     >
-      <Avatar size="2xl" />
-      <Tag
-        size="sm"
-        variant="solid"
-        colorScheme="facebook"
-        rounded="lg"
-        textAlign="center"
-        fontSize="xl"
-        pb={1}
-        pl={3}
-        pr={3}
-        mt={3}
+      <Box
+        display="flex"
+        flexDirection="row"
+        alignItems="stretch"
+        backgroundColor="blackAlpha.200"
+        borderRadius="lg"
+        boxShadow="lg"
       >
-        Giorgio Ewah
-      </Tag>
+        <Box display="block" m={6}>
+          <Avatar
+            size="2xl"
+            display="grid"
+            name="Giorgio Ewah"
+            src="https://i.imgur.com/qO18vwj.png"
+          />
+          <Tag
+            size="sm"
+            variant="solid"
+            colorScheme="facebook"
+            rounded="lg"
+            textAlign="center"
+            fontSize="xl"
+            pb={1}
+            pl={3}
+            pr={3}
+            mt={3}
+            display="grid"
+          >
+            Giorgio Ewah
+          </Tag>
+        </Box>
+      </Box>
     </Flex>
-    <Grid p={10} gap={6} templateColumns="repeat(auto-fit, minmax(350px, 1fr))">
+    <Grid
+      p={1}
+      gap={6}
+      templateColumns="repeat(auto-fit, minmax(350px, 1fr))"
+      ml={6}
+      mr={6}
+      borderRadius="lg"
+    >
       <Stack>
         <Box
-          backgroundColor="white"
-          boxShadow="sm"
+          backgroundColor="blackAlpha.200"
+          boxShadow="lg"
           borderRadius="lg"
           pl={3}
           pr={3}
-          pt={5}
-          pb={5}
+          pt={6}
+          pb={6}
+          border="0px"
+          m={3}
         >
           <Flex
             display="flex"
@@ -80,7 +109,7 @@ const App = () => (
               fontWeight="bold"
               fontFamily="heading"
             >
-              Bla
+              About
             </Heading>
           </Flex>
           <Stack ml={4} spacing={2} mt={4} mr={4}>
@@ -90,7 +119,7 @@ const App = () => (
               spacing={2}
             >
               <Tag colorScheme="facebook" size="md">
-                Tag name
+                FrontEnd Developer
               </Tag>
               <Text>Text value</Text>
               <Text>Text value</Text>
@@ -106,13 +135,14 @@ const App = () => (
       </Stack>
       <Box>
         <Box
-          backgroundColor="white"
+          backgroundColor="blackAlpha.200"
           borderRadius="lg"
-          boxShadow="sm"
+          boxShadow="lg"
           pl={3}
           pr={3}
-          pt={5}
-          pb={5}
+          pt={6}
+          pb={6}
+          m={3}
         >
           <Flex
             display="flex"
@@ -127,7 +157,7 @@ const App = () => (
               fontWeight="bold"
               fontFamily="heading"
             >
-              Bla
+              Things that i know
             </Heading>
           </Flex>
           <Stack spacing={4} ml={4} mt={4}>
@@ -154,13 +184,14 @@ const App = () => (
       </Box>
       <Box>
         <Box
-          backgroundColor="white"
+          backgroundColor="blackAlpha.200"
           borderRadius="lg"
-          boxShadow="sm"
+          boxShadow="lg"
           pl={3}
           pr={3}
-          pt={5}
-          pb={5}
+          pt={6}
+          pb={6}
+          m={3}
         >
           <Flex
             display="flex"
@@ -177,7 +208,7 @@ const App = () => (
               fontWeight="bold"
               fontFamily="heading"
             >
-              y mas
+              Things that i like
             </Heading>
           </Flex>
           <Stack spacing={5} pl={4} pt={4}>
@@ -213,6 +244,6 @@ const App = () => (
       </Box>
     </Grid>
   </ChakraProvider>
-)
+);
 
-export default App
+export default App;

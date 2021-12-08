@@ -1,12 +1,12 @@
 {
-  "name": "react",
+  "name": "react-forked",
   "version": "0.0.0",
   "description": null,
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.5.0",
+    "@chakra-ui/icons": "^1.0.9",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
     "framer-motion": "^4.1.3",
