@@ -24,6 +24,39 @@
 </head>
 <body>
   <div id="root"></div>
+  <div
+      style="
+        background-color: var(--chakra-colors-blackAlpha-200);
+        border-radius: var(--chakra-radii-lg);
+        box-shadow: var(--chakra-shadows-lg);
+        padding-left: var(--chakra-space-3);
+        padding-right: var(--chakra-space-3);
+        padding-top: var(--chakra-space-5);
+        padding-bottom: var(--chakra-space-5);
+        margin: var(--chakra-space-10);
+        position: relative;
+      "
+    >
+      <script
+        type="text/javascript"
+        src="https://latest.cactus.chat/cactus.js"
+      ></script>
+      <link
+        rel="stylesheet"
+        href="https://latest.cactus.chat/style.css"
+        type="text/css"
+      />
+      <div id="comment-section"></div>
+      <script>
+        initComments({
+          node: document.getElementById("comment-section"),
+          defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
+          serverName: "cactus.chat",
+          siteName: "gioze-personal",
+          commentSectionId: "section1"
+        });
+      </script>
+    </div>
   <!--
     This HTML file is a template.
     If you open it directly in the browser, you will see an empty page.
