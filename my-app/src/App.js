@@ -27,6 +27,7 @@ import { EmailIcon } from "@chakra-ui/icons";
 
 const App = () => (
   <ChakraProvider resetCSS>
+  
     <Flex
       display="flex"
       flexDirection="column"
@@ -71,9 +72,12 @@ const App = () => (
             display="grid"
           >
             Giorgio Ewah
+            
           </Tag>
+          
         </Box>
       </Box>
+      
     </Flex>
     <Grid
       p={1}
@@ -208,36 +212,16 @@ const App = () => (
               fontWeight="bold"
               fontFamily="heading"
             >
-              Things that i like
+            
+              My favourite Quotes:
             </Heading>
+            <div id="quotes"/>
+
+            
           </Flex>
           <Stack spacing={5} pl={4} pt={4}>
             <Stack spacing={2} alignItems="flex-start">
-              <Tag
-                size="md"
-                variant="solid"
-                colorScheme="facebook"
-                rounded="md"
-              >
-                uno
-              </Tag>
-              <Text color="gray.600">Text value</Text>
-            </Stack>
-            <Stack alignItems="flex-start">
-              <Tag
-                size="md"
-                variant="solid"
-                colorScheme="facebook"
-                rounded="md"
-              >
-                due
-              </Tag>
-              <Text color="gray.600">Text value</Text>
-            </Stack>
-            <Stack spacing={4} alignItems="flex-start">
-              <Tag size="md" variant="solid" colorScheme="facebook">
-                tre
-              </Tag>
+            
             </Stack>
           </Stack>
         </Box>
