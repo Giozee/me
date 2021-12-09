@@ -29,7 +29,7 @@ class Quotes extends React.Component {
     });
 
     if (!isDeleting && text === fullText) {
-      setTimeout(() => this.setState({ isDeleting: true }), 500);
+      setTimeout(() => this.setState({ isDeleting: true }), 4000);
     } else if (isDeleting && text === "") {
       this.setState({
         isDeleting: false,

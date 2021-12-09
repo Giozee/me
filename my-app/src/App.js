@@ -50,6 +50,7 @@ const App = () => (
         backgroundColor="blackAlpha.200"
         borderRadius="lg"
         boxShadow="lg"
+        m={3}
       >
         <Box display="block" m={6}>
           <Avatar
@@ -148,42 +149,7 @@ const App = () => (
           pb={6}
           m={3}
         >
-          <Flex
-            display="flex"
-            flexDirection="row"
-            alignItems="center"
-            justifyContent="flex-start"
-          >
-            <Heading
-              size="md"
-              as="h2"
-              lineHeight="shorter"
-              fontWeight="bold"
-              fontFamily="heading"
-            >
-              Things that i know
-            </Heading>
-          </Flex>
-          <Stack spacing={4} ml={4} mt={4}>
-            <Stack spacing={2} alignItems="flex-start">
-              <Tag colorScheme="facebook" size="md" variant="subtle">
-                Tag name
-              </Tag>
-              <Text>Text value</Text>
-            </Stack>
-            <Stack spacing={2} alignItems="flex-start">
-              <Tag size="md" variant="subtle">
-                Tag name
-              </Tag>
-              <Text>Text value</Text>
-            </Stack>
-            <Stack spacing={2} alignItems="flex-start">
-              <Tag size="md" variant="subtle" colorScheme="gray">
-                Tag name
-              </Tag>
-              <Text>Text value</Text>
-            </Stack>
-          </Stack>
+        <div id='triangles'/>
         </Box>
       </Box>
       <Box>
@@ -214,14 +180,12 @@ const App = () => (
             >
             
               My favourite Quotes:
-            </Heading>
-            <div id="quotes"/>
-
-            
+            </Heading>        
           </Flex>
+          
           <Stack spacing={5} pl={4} pt={4}>
             <Stack spacing={2} alignItems="flex-start">
-            
+            <div id="quotes"/>
             </Stack>
           </Stack>
         </Box>

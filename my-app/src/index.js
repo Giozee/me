@@ -2,14 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Quotes from "./quotes";
 import App from "./App";
+import Triangles from "./triangles";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Triangles />, document.getElementById("triangles"));
 
 ReactDOM.render(
     <Quotes
       heading=""
       dataText={[  
+          '',
         'There’s no prize in winning other than self-satisfied loneliness',
 'People don’t change when they are told what’s wrong with them...they change when they feel sufficiently supported to undertake the change they already know is due.',
 'It always seems impossible until it’s done. - Nelson Mandela',
