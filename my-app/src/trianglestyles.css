@@ -6,8 +6,8 @@ g {
   will-change: transform;  
 }
 svg {
-  width:25vw;
-  height:30vh;
+  width:1920px;
+  height:1080px;
 }
 
 .reverse g {
