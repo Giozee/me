@@ -19,7 +19,8 @@
     "react-social-icons": "^5.6.1",
     "react-spring": "^8.0.27",
     "react-three-fiber": "^4.2.21",
-    "three": "^0.120.1",
+    "simplex-noise": "^3.0.0",
+    "three": "^0.117.1",
     "three-stdlib": "^2.6.1",
     "use-cannon": "^0.5.0",
     "zustand": "^3.0.3"
