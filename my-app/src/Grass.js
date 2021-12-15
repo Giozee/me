@@ -19,8 +19,8 @@ const defaultBladeOptions = {
 
 export default function Grass({
   bladeOptions = defaultBladeOptions,
-  width = 100,
-  instances = 50000
+  width = 250,
+  instances = 300000
 }) {
   const materialRef = useRef();
   const groundRef = useRef();
@@ -183,7 +183,7 @@ function getAttributeData(instances, width) {
 
     //Define variety in height
     if (i < instances / 3) {
-      stretches.push(Math.random() * 1.8);
+      stretches.push(Math.random() * 2.8);
     } else {
       stretches.push(Math.random());
     }
